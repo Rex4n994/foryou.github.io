@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Beautiful Girlfriend</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .dancing-font {
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        .heart {
+            animation: heartbeat 1.5s infinite;
+            color: #ff6b6b;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .photo-frame {
+            border: 15px solid white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transform: rotate(-5deg);
+            transition: all 0.3s ease;
+        }
+        
+        .photo-frame:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+        
+        .message-box {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .btn-romantic {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-romantic:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+        }
+        
+        .polaroid {
+            background: white;
+            padding: 15px 15px 60px 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            transform: rotate(2deg);
+            transition: all 0.3s ease;
+        }
+        
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+        
+        .polaroid:nth-child(even) {
+            transform: rotate(-3deg);
+        }
+        
+        .polaroid:nth-child(even):hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+        
+        .memory-scroll {
+            scroll-behavior: smooth;
+        }
+        
+        .memory-scroll::-webkit-scrollbar {
+            height: 8px;
+        }
+        
+        .memory-scroll::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+        }
+        
+        .memory-scroll::-webkit-scrollbar-thumb {
+            background: rgba(255, 107, 107, 0.6);
+            border-radius: 10px;
+        }
+        
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f00;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center py-12 px-4">
+    <!-- Header with title -->
+    <header class="text-center mb-12">
+        <h1 class="dancing-font text-5xl md:text-6xl font-bold text-pink-600 mb-4">
+            For My <span class="heart inline-block">❤️</span> Beautiful <span class="heart inline-block">❤️</span> Girlfriend
+        </h1>
+        <p class="text-xl text-gray-600">You make my world brighter every day</p>
+    </header>
+
+    <!-- Main content -->
+    <main class="w-full max-w-6xl">
+        <!-- Photo and message section -->
+        <section class="flex flex-col lg:flex-row items-center justify-center gap-12 mb-16">
+            <!-- Photo frame - Replace with your girlfriend's photo -->
+            <div class="photo-frame w-64 h-64 md:w-90 md:h-80 bg-pink-100 flex items-center justify-center">
+                <div class="text-center p-4">
+                    <img src="Fav.jpeg">
+                </div>
+            </div>
+            
+            <!-- Heartfelt message -->
+            <div class="message-box p-8 max-w-lg w-full">
+                <h2 class="dancing-font text-3xl text-pink-600 mb-4">My Dearest Love,</h2>
+                <p class="text-gray-700 mb-4">
+                    Every moment with you feels like a beautiful dream I never want to wake up from. 
+                    Your smile brightens my darkest days, and your love gives me strength I never knew I had.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    I cherish the way you laugh, the way you care, and the incredible person you are. 
+                    You've brought so much joy into my life, and I'm endlessly grateful for you.
+                </p>
+                <p class="dancing-font text-2xl text-pink-600 mt-6">
+                    Forever yours,
+                </p>
+                <p class="dancing-font text-xl text-gray-600">
+                    Airlangga
+                </p>
+            </div>
+        </section>
+
+        <!-- Reasons I love you -->
+        <section class="mb-16 text-center">
+            <h2 class="dancing-font text-4xl text-pink-600 mb-8">
+                Reasons Why I Love You
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Reason 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="heart text-4xl mb-4">
+                        <i class="fas fa-smile-beam"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-pink-600 mb-2">Your Beautiful Smile</h3>
+                    <p class="text-gray-600">It lights up my world like nothing else can.</p>
+                </div>
+                
+                <!-- Reason 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="heart text-4xl mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-pink-600 mb-2">Your Kind Heart</h3>
+                    <p class="text-gray-600">You care so deeply, and it inspires me every day.</p>
+                </div>
+                
+                <!-- Reason 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="heart text-4xl mb-4">
+                        <i class="fas fa-laugh-squint"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-pink-600 mb-2">Your Sense of Humor</h3>
+                    <p class="text-gray-600">You always know how to make me laugh, even on tough days.</p>
+                </div>
+                
+                <!-- Reason 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="heart text-4xl mb-4">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-pink-600 mb-2">Your Support</h3>
+                    <p class="text-gray-600">You're always there for me, no matter what.</p>
+                </div>
+                
+                <!-- Reason 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="heart text-4xl mb-4">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-pink-600 mb-2">Your Unique Magic</h3>
+                    <p class="text-gray-600">There's no one else in the world like you.</p>
+                </div>
+                
+                <!-- Reason 6 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    <div class="heart text-4xl mb-4">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-pink-600 mb-2">Everything About You</h3>
+                    <p class="text-gray-600">Every little thing that makes you, you.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memory lane -->
+        <section class="mb-16">
+            <h2 class="dancing-font text-4xl text-pink-600 mb-8 text-center">
+                Our Beautiful Memories
+            </h2>
+            
+            <div class="memory-scroll flex overflow-x-auto gap-6 pb-6 px-2">
+                <!-- Memory 1 - Replace with your photos -->
+                <div class="polaroid flex-shrink-0 w-48">
+                    <div class="bg-pink-100 h-32 flex items-center justify-center">
+                        <img src="First Meet.jpeg">
+                    </div>
+                    <p class="text-center mt-2 dancing-font text-pink-600">Our First Date</p>
+                </div>
+                
+                <!-- Memory 2 -->
+                <div class="polaroid flex-shrink-0 w-48">
+                    <div class="bg-blue-100 h-32 flex items-center justify-center">
+                        <img src="Last Meet.jpg">
+                    </div>
+                    <p class="text-center mt-2 dancing-font text-blue-600">That Special Day</p>
+                </div>
+                
+                <!-- Memory 3 -->
+                <div class="polaroid flex-shrink-0 w-48">
+                    <div class="bg-yellow-100 h-32 flex items-center justify-center">
+                        <i class="fas fa-image text-4xl text-yellow-300"></i>
+                    </div>
+                    <p class="text-center mt-2 dancing-font text-yellow-600">...</p>
+                </div>
+                
+                <!-- Memory 4 -->
+                <div class="polaroid flex-shrink-0 w-48">
+                    <div class="bg-purple-100 h-32 flex items-center justify-center">
+                        <i class="fas fa-image text-4xl text-purple-300"></i>
+                    </div>
+                    <p class="text-center mt-2 dancing-font text-purple-600">...</p>
+                </div>
+                
+                <!-- Memory 5 -->
+                <div class="polaroid flex-shrink-0 w-48">
+                    <div class="bg-green-100 h-32 flex items-center justify-center">
+                        <i class="fas fa-image text-4xl text-green-300"></i>
+                    </div>
+                    <p class="text-center mt-2 dancing-font text-green-600">...</p>
+                </div>
+                
+                <!-- Memory 6 -->
+                <div class="polaroid flex-shrink-0 w-48">
+                    <div class="bg-red-100 h-32 flex items-center justify-center">
+                        <i class="fas fa-image text-4xl text-pink-300"></i>
+                    </div>
+                    <p class="text-center mt-2 dancing-font text-red-600">...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive love meter -->
+        <section class="mb-16 text-center">
+            <h2 class="dancing-font text-4xl text-pink-600 mb-8">
+                How Much I Love You
+            </h2>
+            
+            <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6">
+                <div class="h-8 bg-gray-200 rounded-full mb-4 overflow-hidden">
+                    <div id="loveMeter" class="h-full bg-gradient-to-r from-pink-400 to-red-500 rounded-full w-0 transition-all duration-1000"></div>
+                </div>
+                <button id="measureLove" class="btn-romantic text-white font-bold py-3 px-8 rounded-full">
+                    Measure My Love
+                </button>
+                <p id="loveResult" class="dancing-font text-2xl text-pink-600 mt-4"></p>
+            </div>
+        </section>
+
+        <!-- Final message with floating hearts -->
+        <section class="relative text-center max-w-2xl mx-auto">
+            <div class="floating">
+                <i class="fas fa-heart text-pink-400 text-4xl absolute -left-4 -top-4 opacity-70"></i>
+                <i class="fas fa-heart text-pink-400 text-3xl absolute -right-4 top-8 opacity-70"></i>
+                <i class="fas fa-heart text-pink-400 text-5xl absolute -left-8 bottom-8 opacity-70"></i>
+                <i class="fas fa-heart text-pink-400 text-2xl absolute -right-6 bottom-4 opacity-70"></i>
+            </div>
+            
+            <div class="bg-white bg-opacity-90 p-8 rounded-xl relative z-10">
+                <h2 class="dancing-font text-4xl text-pink-600 mb-6">
+                    To The Love Of My Life
+                </h2>
+                <p class="text-gray-700 text-lg mb-6">
+                    No words can truly capture how much you mean to me. 
+                    You're my happiness, my comfort, my greatest adventure.
+                </p>
+                <p class="dancing-font text-3xl text-pink-600">
+                    I love you more than words can express
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with surprise button -->
+    <footer class="mt-16 text-center">
+        <button id="surpriseBtn" class="btn-romantic text-white font-bold py-3 px-8 rounded-full mb-4">
+            Click for a Surprise!
+        </button>
+        <p class="text-gray-500">Made with <i class="fas fa-heart text-pink-400"></i> for you</p>
+    </footer>
+
+    <script>
+        // Measure love button functionality
+        document.getElementById('measureLove').addEventListener('click', function() {
+            const loveMeter = document.getElementById('loveMeter');
+            const loveResult = document.getElementById('loveResult');
+            
+            // Animate the meter
+            loveMeter.style.width = '100%';
+            
+            // Show result after animation
+            setTimeout(() => {
+                loveResult.textContent = 'Infinite! My love for you has no limits!';
+                
+                // Create floating hearts
+                for (let i = 0; i < 20; i++) {
+                    createFloatingHeart();
+                }
+            }, 1000);
+        });
+        
+        // Surprise button functionality
+        document.getElementById('surpriseBtn').addEventListener('click', function() {
+            // Create confetti effect
+            for (let i = 0; i < 100; i++) {
+                createConfetti();
+            }
+            
+            // Show sweet alert
+            alert("Surprise! You're the most amazing person in my life and I'm so lucky to have you!");
+        });
+        
+        // Function to create floating hearts
+        function createFloatingHeart() {
+            const heart = document.createElement('div');
+            heart.innerHTML = '<i class="fas fa-heart text-pink-400"></i>';
+            heart.className = 'floating-heart text-xl absolute';
+            
+            // Random position at bottom of screen
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.bottom = '0';
+            heart.style.opacity = '0';
+            heart.style.transition = 'all 4s ease-out';
+            
+            document.body.appendChild(heart);
+            
+            // Animate
+            setTimeout(() => {
+                heart.style.opacity = '1';
+                heart.style.bottom = '100vh';
+                heart.style.transform = 'translateX(' + (Math.random() * 200 - 100) + 'px)';
+            }, 10);
+            
+            // Remove after animation
+            setTimeout(() => {
+                heart.remove();
+            }, 4000);
+        }
+        
+        // Function to create confetti
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.className = 'confetti';
+            
+            // Random color
+            const colors = ['#ff6b6b', '#ff8e8e', '#ffb3b3', '#ffd8d8', '#f8a5c2', '#f78fb3'];
+            confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            
+            // Random shape
+            const shapes = ['circle', 'square', 'triangle'];
+            const shape = shapes[Math.floor(Math.random() * shapes.length)];
+            
+            if (shape === 'circle') {
+                confetti.style.borderRadius = '50%';
+            } else if (shape === 'triangle') {
+                confetti.style.width = '0';
+                confetti.style.height = '0';
+                confetti.style.borderLeft = '5px solid transparent';
+                confetti.style.borderRight = '5px solid transparent';
+                confetti.style.borderBottom = '10px solid ' + confetti.style.backgroundColor;
+                confetti.style.backgroundColor = 'transparent';
+            }
+            
+            // Random position at top
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.top = '-10px';
+            
+            // Random size
+            const size = Math.random() * 10 + 5;
+            if (shape !== 'triangle') {
+                confetti.style.width = size + 'px';
+                confetti.style.height = size + 'px';
+            }
+            
+            document.body.appendChild(confetti);
+            
+            // Animate
+            const animationDuration = Math.random() * 3000 + 2000;
+            
+            confetti.style.transition = `all ${animationDuration/1000}s ease-out`;
+            confetti.style.opacity = '1';
+            
+            setTimeout(() => {
+                confetti.style.top = '100vh';
+                confetti.style.transform = 'rotate(' + (Math.random() * 360) + 'deg)';
+                confetti.style.opacity = '0';
+                confetti.style.left = parseFloat(confetti.style.left) + (Math.random() * 200 - 100) + 'px';
+            }, 10);
+            
+            // Remove after animation
+            setTimeout(() => {
+                confetti.remove();
+            }, animationDuration);
+        }
+        
+        // Create some initial floating hearts
+        for (let i = 0; i < 5; i++) {
+            setTimeout(createFloatingHeart, i * 800);
+        }
+    </script>
+</body>
+</html>
